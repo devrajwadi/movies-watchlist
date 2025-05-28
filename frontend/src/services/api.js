@@ -1,9 +1,14 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api";
+// Update API URL for production deployment
+const API_URL =
+  process.env.NODE_ENV === "production"
+    ? "https://movies-watchlist-backend-jjef.onrender.com" // Replace with your actual Render URL after deployment
+    : "http://localhost:5000/api";
+
 const WATCHLIST_KEY = "movie-watchlist";
 
-// Fixed typo in async keyword
+// Search movies using backend API
 export const searchMovies = async (title) => {
   try {
     const response = await axios.get(`${API_URL}/movies/search`, {
@@ -16,6 +21,7 @@ export const searchMovies = async (title) => {
   }
 };
 
+// Watchlist functions using localStorage (keeping your existing logic)
 export const getWatchlist = () => {
   const watchlist = JSON.parse(localStorage.getItem(WATCHLIST_KEY) || "[]");
   return watchlist;
@@ -48,7 +54,6 @@ export const removeFromWatchlist = (id) => {
   return updatedWatchlist;
 };
 
-// Fixed function name - was duplicated with markAsUnwatched
 export const markAsWatched = (id) => {
   const watchlist = getWatchlist();
   const updatedWatchlist = watchlist.map((movie) => {
