@@ -14,7 +14,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000", // for local development
-      "https://movies-watchlist-ten.vercel.app/", // replace with your actual Vercel URL
+      "https://movies-watchlist-ten.vercel.app", // replace with your actual Vercel URL
       "https://movies-watchlist.vercel.app", // another possible URL format
       "https://devrajwadi-movies-watchlist.vercel.app", // based on your GitHub username
     ],
