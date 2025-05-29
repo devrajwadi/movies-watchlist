@@ -3,7 +3,7 @@ import axios from "axios";
 // Update API URL for production deployment
 const API_URL =
   process.env.NODE_ENV === "production"
-    ? "https://movies-watchlist-backend-jjef.onrender.com" // Replace with your actual Render URL after deployment
+    ? "https://movies-watchlist-backend-jjef.onrender.com/api" // Replace with your actual Render URL after deployment
     : "http://localhost:5000/api";
 
 const WATCHLIST_KEY = "movie-watchlist";
