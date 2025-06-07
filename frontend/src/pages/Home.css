@@ -1,8 +1,10 @@
 .home-page {
+  font-size: 30px;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  color: black;
+  color: #e6edf3;
+  background-color: #0d1117;
 }
 
 .home-header {
@@ -11,12 +13,12 @@
   align-items: center;
   margin-bottom: 20px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #30363d;
 }
 
 .home-header h1 {
   margin: 0;
-  color: #2c3e50;
+  color: #e6edf3;
 }
 
 .navigation {
@@ -25,7 +27,7 @@
 }
 
 .nav-link {
-  background-color: #3498db;
+  background-color: #1f6feb;
   color: white;
   padding: 8px 15px;
   border-radius: 4px;
@@ -35,7 +37,7 @@
 }
 
 .nav-link:hover {
-  background-color: #2980b9;
+  background-color: #388bfd;
 }
 
 .search-section {
@@ -43,18 +45,19 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  color: black;
+  color: #e6edf3;
 }
 
 .add-movie-button {
   background-color: #f39c12;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 10px;
   border-radius: 2px;
   cursor: pointer;
   font-weight: 500;
   transition: background-color 0.2s;
+  margin-bottom: 20px;
 }
 
 .add-movie-button:hover {
@@ -62,16 +65,16 @@
 }
 
 .content-section {
-  background-color: white;
+  background-color: #161b22;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
 }
 
 .content-section h2 {
   margin-top: 0;
-  color: #2c3e50;
-  border-bottom: 1px solid #eee;
+  color: #e6edf3;
+  border-bottom: 1px solid #30363d;
   padding-bottom: 10px;
   margin-bottom: 20px;
 }
@@ -86,7 +89,7 @@
     align-items: stretch;
     gap: 10px;
   }
-  
+
   .add-movie-button {
     width: 100%;
   }
